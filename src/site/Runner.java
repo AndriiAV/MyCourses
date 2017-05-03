@@ -1,17 +1,21 @@
 package site;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Runner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         Course course1 = new Course("Excel", "Excel for beginners", 1, 2000.00, 4);
         Course course2 = new Course("Excel", "Excel for professionals", 3, 3000.00, 6);
         Courses courses1 = new Courses();
         courses1.add(course1);
         courses1.add(course2);
 
-        Poster poster1 = new Poster(course1, new Date());
-        Poster poster2 = new Poster(course2, new Date());
+        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+
+        Poster poster1 = new Poster(course1, sdf.parse("15.05.2017"));
+        Poster poster2 = new Poster(course2, sdf.parse("30.05.2017"));
         Posters posters1 = new Posters();
         posters1.add(poster1);
         posters1.add(poster2);
@@ -29,7 +33,7 @@ public class Runner {
         student1Groups.add(group1);
 
 
-        System.out.println(student1);
+        System.out.println(group1);
 
     }
 }
