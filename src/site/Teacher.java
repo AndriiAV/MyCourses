@@ -12,7 +12,8 @@ public class Teacher extends Profile {
     @Override
     public String toString() {
         return "Teacher{" +
-                "teachCourse=" + teachCourse +
+                "name=" + getName() +
+                ", teachCourse=" + teachCourse +
                 ", rating=" + rating +
                 '}';
     }
