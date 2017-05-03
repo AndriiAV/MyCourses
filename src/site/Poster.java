@@ -1,5 +1,6 @@
 package site;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Poster {
@@ -10,12 +11,13 @@ public class Poster {
         this.course = course;
         this.startDate = startDate;
     }
+    SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
 
     @Override
     public String toString() {
         return "Poster{" +
                 "course=" + course +
-                ", startDate=" + startDate +
+                ", startDate=" + sdf.format(startDate) +
                 '}';
     }
 }
