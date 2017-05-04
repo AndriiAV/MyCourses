@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 public class Student extends Profile {
 
-    private ArrayList<Course> registeredCourses = new ArrayList<>();
+
+//    private ArrayList<Course> registeredCourses = new ArrayList<>();
     private ArrayList<Group> studentGroups = new ArrayList<>();
 
-    public void setRegisteredCourses(ArrayList<Course> registeredCourses) {
+ /*   public void setRegisteredCourses(ArrayList<Course> registeredCourses) {
         this.registeredCourses = registeredCourses;
     }
-    public void setStudentGroups(ArrayList<Group> studentGroups) {
+*/    public void setStudentGroups(ArrayList<Group> studentGroups) {
         this.studentGroups = studentGroups;
     }
 
@@ -24,7 +25,7 @@ public class Student extends Profile {
                 "name=" + getName() +
                 ", PhoneNumber=" + getPhoneNumber() +
                 ", Email=" + getEmail() +
-                ", registeredCourses=" + registeredCourses +
+  //              ", registeredCourses=" + registeredCourses +
                 ", studentGroups=" + studentGroups +
                 '}';
     }

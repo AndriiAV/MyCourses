@@ -1,15 +1,20 @@
 package site;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.StringJoiner;
 
 public class Courses {
     private final ArrayList<Course> listOfCourses = new ArrayList<>();
 
     public void sorting (){
+      //  listOfCourses.sort();
+      //  Collection
     }
     public void filtering (){
     }
+
+
 
     public void add(Course course) {
         listOfCourses.add(course);

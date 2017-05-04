@@ -6,10 +6,12 @@ import java.util.Date;
 public class Poster {
     private final Course course;
     private final Date startDate;
+    private final Teacher teacher;
 
-    public Poster(Course course, Date startDate) {
+    public Poster(Course course, Date startDate, Teacher teacher) {
         this.course = course;
         this.startDate = startDate;
+        this.teacher = teacher;
     }
     SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
 
