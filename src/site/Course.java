@@ -16,6 +16,22 @@ public class Course {
         this.duration = duration;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
     public boolean isAvailable() {
         return available;
     }
