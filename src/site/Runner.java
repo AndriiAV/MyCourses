@@ -40,6 +40,8 @@ public class Runner {
         Poster poster1 = new Poster(course1, sdf.parse("15.08.2017"), teacher1);
         Poster poster2 = new Poster(course2, sdf.parse("30.05.2017"), teacher1);
         Poster poster3 = new Poster(course3, sdf.parse("10.05.2017"), teacher1);
+/*        System.out.println(poster1.getSdf());
+        System.out.println(poster1.testDate(poster1.getSdf()));*/
         Posters posters1 = new Posters();
         posters1.add(poster1);
         posters1.add(poster2);
