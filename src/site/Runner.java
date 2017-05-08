@@ -37,21 +37,26 @@ public class Runner {
 
         Teacher teacher1 = new Teacher("Petro", "(050)123-45-67", "petro@gmail.com");
 
-        Poster poster1 = new Poster(course1, sdf.parse("15.05.2017"), teacher1);
+        Poster poster1 = new Poster(course1, sdf.parse("15.08.2017"), teacher1);
         Poster poster2 = new Poster(course2, sdf.parse("30.05.2017"), teacher1);
         Poster poster3 = new Poster(course3, sdf.parse("10.05.2017"), teacher1);
         Posters posters1 = new Posters();
         posters1.add(poster1);
         posters1.add(poster2);
         posters1.add(poster3);
-        System.out.println("Normal");
+/*        System.out.println("Normal");
         System.out.println(posters1);
         System.out.println("By date");
         posters1.sortingByDate();
         System.out.println(posters1);
-
+*/
         Group group1 = new Group(course1, teacher1);
-        Student student1 = new Student("Ivan", "(067)123-45-89", "ivan@gmail.com");
+        Student student1 = new Student("Ivan", "+38(067)123-45-78", "ivan@gmail.com");
+        System.out.println(student1.getPhoneNumber());
+        System.out.println(student1.testPhoneNumber(student1.getPhoneNumber()));
+        System.out.println(student1.getEmail());
+        System.out.println(student1.testEmail(student1.getEmail()));
+
         Students studentsList = new Students();
         studentsList.add(student1);
 
