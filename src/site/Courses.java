@@ -1,20 +1,58 @@
 package site;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.StringJoiner;
+import java.util.*;
 
 public class Courses {
     private final ArrayList<Course> listOfCourses = new ArrayList<>();
 
-    public void sorting (){
-      //  listOfCourses.sort();
-      //  Collection
+    public void sortingByName (){
+        Collections.sort(listOfCourses, new Comparator<Course>() {
+            @Override
+            public int compare(Course o1, Course o2) {
+                return  o1.getName().compareTo(o2.getName());
+            }
+        }
+        );
     }
+
+    public void sortingByLevel (){
+        Collections.sort(listOfCourses, new Comparator<Course>() {
+                    @Override
+                    public int compare(Course o1, Course o2) {
+                        if (o1.getLevel() < o2.getLevel()) return -1;
+                        if (o1.getLevel() > o2.getLevel()) return 1;
+                        return 0;
+                    }
+                }
+        );
+    }
+
+    public void sortingByPrice (){
+        Collections.sort(listOfCourses, new Comparator<Course>() {
+                    @Override
+                    public int compare(Course o1, Course o2) {
+                        if (o1.getPrice() < o2.getPrice()) return -1;
+                        if (o1.getPrice() > o2.getPrice()) return 1;
+                        return 0;
+                    }
+                }
+        );
+    }
+
+    public void sortingByDuration (){
+        Collections.sort(listOfCourses, new Comparator<Course>() {
+                    @Override
+                    public int compare(Course o1, Course o2) {
+                        if (o1.getDuration() < o2.getDuration()) return -1;
+                        if (o1.getDuration() > o2.getDuration()) return 1;
+                        return 0;
+                    }
+                }
+        );
+    }
+
     public void filtering (){
     }
-
-
 
     public void add(Course course) {
         listOfCourses.add(course);
