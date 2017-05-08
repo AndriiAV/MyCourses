@@ -17,7 +17,7 @@ public class Runner {
         courses1.add(course3);
         courses1.add(course4);
 
-        System.out.println("Normal");
+/*        System.out.println("Normal");
         System.out.println(courses1);
         System.out.println("By name");
         courses1.sortingByName();
@@ -31,7 +31,7 @@ public class Runner {
         System.out.println("By duration");
         courses1.sortingByDuration();
         System.out.println(courses1);
-
+*/
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
 
@@ -39,9 +39,16 @@ public class Runner {
 
         Poster poster1 = new Poster(course1, sdf.parse("15.05.2017"), teacher1);
         Poster poster2 = new Poster(course2, sdf.parse("30.05.2017"), teacher1);
+        Poster poster3 = new Poster(course3, sdf.parse("10.05.2017"), teacher1);
         Posters posters1 = new Posters();
         posters1.add(poster1);
         posters1.add(poster2);
+        posters1.add(poster3);
+        System.out.println("Normal");
+        System.out.println(posters1);
+        System.out.println("By date");
+        posters1.sortingByDate();
+        System.out.println(posters1);
 
         Group group1 = new Group(course1, teacher1);
         Student student1 = new Student("Ivan", "(067)123-45-89", "ivan@gmail.com");
