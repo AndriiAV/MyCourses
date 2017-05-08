@@ -5,6 +5,11 @@ import java.util.Date;
 
 public class Poster {
     private final Course course;
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
     private final Date startDate;
     private final Teacher teacher;
 
