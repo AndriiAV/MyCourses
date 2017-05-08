@@ -47,7 +47,7 @@ public class Course {
                 ", description='" + description + '\'' +
                 ", level=" + level +
                 ", price=" + price +" UAH"+
-                ", available=" + available +
+                ", duration=" + duration +" weeks"+
                 '}';
     }
 }
