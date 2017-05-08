@@ -7,10 +7,31 @@ import java.util.Date;
 public class Runner {
     public static void main(String[] args) throws ParseException {
         Course course1 = new Course("Excel", "Excel for beginners", 1, 2000.00, 4);
-        Course course2 = new Course("Excel", "Excel for professionals", 3, 3000.00, 6);
+        Course course2 = new Course("Word", "Word for professionals", 3, 3000.00, 6);
+        Course course3 = new Course("Excel", "Excel for professionals", 3, 3500.00, 1);
+        Course course4 = new Course("Excel", "Excel for users", 2, 1500.00, 3);
+
         Courses courses1 = new Courses();
         courses1.add(course1);
         courses1.add(course2);
+        courses1.add(course3);
+        courses1.add(course4);
+
+        System.out.println("Normal");
+        System.out.println(courses1);
+        System.out.println("By name");
+        courses1.sortingByName();
+        System.out.println(courses1);
+        System.out.println("By level");
+        courses1.sortingByLevel();
+        System.out.println(courses1);
+        System.out.println("By price");
+        courses1.sortingByPrice();
+        System.out.println(courses1);
+        System.out.println("By duration");
+        courses1.sortingByDuration();
+        System.out.println(courses1);
+
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
 
@@ -36,7 +57,7 @@ public class Runner {
         groups1.add(group1);
         groups1.add(group2);
 
-        System.out.println(poster1);
+        //System.out.println(courses1);
 
     }
 }
