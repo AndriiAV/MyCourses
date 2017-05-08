@@ -1,14 +1,24 @@
 package site;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.StringJoiner;
 
 public class Posters {
     private final ArrayList<Poster> listOfPosters = new ArrayList<>();
 
     public void sortingByName (){
+// сортування по імені курсу, який міститься в оголошенні
     }
     public void sortingByDate (){
+        Collections.sort(listOfPosters, new Comparator<Poster>() {
+                    @Override
+                    public int compare(Poster o1, Poster o2) {
+                        return  o1.getStartDate().compareTo(o2.getStartDate());
+                    }
+                }
+        );
     }
     public void filteringByName (){
     }
