@@ -16,6 +16,14 @@ public class Group {
         listOfStudents.add(student);
     }
 
+    public String getTeacher() {
+        return teacher.getName();
+    }
+
+    public String getCourse() {
+        return course.getName();
+    }
+
     @Override
     public String toString() {
         return "Group{" +
