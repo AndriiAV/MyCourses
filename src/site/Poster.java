@@ -22,6 +22,14 @@ public class Poster {
 
     SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
 
+    public String getCourse() {
+        return course.getName();
+    }
+
+    public String getTeacher() {
+        return teacher.getName();
+    }
+
     public String getSdf(){
         return sdf.format(startDate);
     }
