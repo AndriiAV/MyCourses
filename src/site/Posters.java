@@ -8,9 +8,26 @@ import java.util.StringJoiner;
 public class Posters {
     private final ArrayList<Poster> listOfPosters = new ArrayList<>();
 
-    public void sortingByName (){
-// сортування по імені курсу, який міститься в оголошенні
+    public void sortingByNameOfCourses (){
+        Collections.sort(listOfPosters, new Comparator<Poster>() {
+                    @Override
+                    public int compare(Poster o1, Poster o2) {
+                        return  o1.getCourse().compareTo(o2.getCourse());
+                    }
+                }
+        );
     }
+
+    public void sortingByNameOfTeacher (){
+        Collections.sort(listOfPosters, new Comparator<Poster>() {
+                    @Override
+                    public int compare(Poster o1, Poster o2) {
+                        return  o1.getTeacher().compareTo(o2.getTeacher());
+                    }
+                }
+        );
+    }
+
     public void sortingByDate (){
         Collections.sort(listOfPosters, new Comparator<Poster>() {
                     @Override
