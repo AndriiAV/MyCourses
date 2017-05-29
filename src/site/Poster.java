@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class Poster {
     private final Course course;
-    private final Date startDate;
+    private Date startDate;
     private final Teacher teacher;
 
     public Poster(Course course, Date startDate, Teacher teacher) {

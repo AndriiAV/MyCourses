@@ -1,7 +1,11 @@
 package site;
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 
 public class Runner {
@@ -37,11 +41,11 @@ public class Runner {
 
         Teacher teacher1 = new Teacher("Petro", "(050)123-45-67", "petro@gmail.com");
 
-        Poster poster1 = new Poster(course1, sdf.parse("15.08.2017"), teacher1);
+        Poster poster1 = new Poster(course1, sdf.parse("30.05.2017"), teacher1);
         Poster poster2 = new Poster(course2, sdf.parse("30.05.2017"), teacher1);
         Poster poster3 = new Poster(course3, sdf.parse("10.05.2017"), teacher1);
-/*        System.out.println(poster1.getSdf());
-        System.out.println(poster1.testDate(poster1.getSdf()));*/
+        System.out.println(poster1.getSdf());
+        System.out.println(poster1.testDate(poster1.getSdf()));
         Posters posters1 = new Posters();
         posters1.add(poster1);
         posters1.add(poster2);
@@ -70,8 +74,6 @@ public class Runner {
         Groups groups1 = new Groups();
         groups1.add(group1);
         groups1.add(group2);
-
-        //System.out.println(courses1);
 
     }
 }

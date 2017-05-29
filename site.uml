@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>site</OriginalElement>
+  <nodes>
+    <node x="1024.5114583333334" y="1163.0">site.Posters</node>
+    <node x="102.91666666666663" y="916.0">site.Group</node>
+    <node x="309.16666666666663" y="1663.0">site.Runner</node>
+    <node x="247.15520833333335" y="1442.0">site.Students</node>
+    <node x="717.5" y="390.0">site.Courses</node>
+    <node x="474.25" y="691.0">site.Teacher</node>
+    <node x="318.90520833333335" y="0.0">site.Course</node>
+    <node x="169.90520833333323" y="1217.5">site.Student</node>
+    <node x="402.5" y="400.5">site.Profile</node>
+    <node x="47.5" y="434.0">site.Groups</node>
+    <node x="1183.2802083333333" y="883.0">site.Poster</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="site.Runner" target="site.Students">
+      <point x="0.0" y="-26.0" />
+      <point x="394.66666666666663" y="1603.0" />
+      <point x="410.15520833333335" y="1603.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="site.Student" target="site.Profile">
+      <point x="102.33333333333337" y="-60.0" />
+      <point x="425.7385416666666" y="1138.0" />
+      <point x="463.75" y="1138.0" />
+      <point x="463.75" y="671.0" />
+      <point x="476.25" y="671.0" />
+      <point x="-73.75" y="115.0" />
+    </edge>
+    <edge source="site.Runner" target="site.Teacher">
+      <point x="19.0" y="-26.0" />
+      <point x="413.66666666666663" y="1613.0" />
+      <point x="636.25" y="1613.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="site.Poster" target="site.Teacher">
+      <point x="-76.5" y="-115.0" />
+      <point x="1259.7802083333333" y="858.0" />
+      <point x="744.25" y="858.0" />
+      <point x="108.0" y="71.0" />
+    </edge>
+    <edge source="site.Teacher" target="site.Profile">
+      <point x="0.0" y="-71.0" />
+      <point x="636.25" y="671.0" />
+      <point x="623.75" y="671.0" />
+      <point x="73.75" y="115.0" />
+    </edge>
+    <edge source="site.Students" target="site.Student">
+      <point x="0.0" y="-70.5" />
+      <point x="410.15520833333335" y="1417.0" />
+      <point x="400.15520833333323" y="1417.0" />
+      <point x="76.75" y="60.0" />
+    </edge>
+    <edge source="site.Runner" target="site.Group">
+      <point x="-38.0" y="-26.0" />
+      <point x="356.66666666666663" y="1623.0" />
+      <point x="139.15729166666665" y="1623.0" />
+      <point x="139.15729166666665" y="1138.0" />
+      <point x="143.91666666666663" y="1138.0" />
+      <point x="-82.0" y="82.0" />
+    </edge>
+    <edge source="site.Groups" target="site.Group">
+      <point x="0.0" y="81.5" />
+      <point x="215.0" y="671.0" />
+      <point x="225.91666666666663" y="671.0" />
+      <point x="0.0" y="-82.0" />
+    </edge>
+    <edge source="site.Runner" target="site.Course">
+      <point x="-76.0" y="-26.0" />
+      <point x="318.66666666666663" y="1643.0" />
+      <point x="26.0" y="1643.0" />
+      <point x="26.0" y="360.0" />
+      <point x="368.28020833333335" y="360.0" />
+      <point x="-148.125" y="170.0" />
+    </edge>
+    <edge source="site.Runner" target="site.Groups">
+      <point x="-57.0" y="-26.0" />
+      <point x="337.66666666666663" y="1633.0" />
+      <point x="92.41666666666663" y="1633.0" />
+      <point x="92.41666666666663" y="671.0" />
+      <point x="103.33333333333331" y="671.0" />
+      <point x="-111.66666666666669" y="81.5" />
+    </edge>
+    <edge source="site.Courses" target="site.Course">
+      <point x="0.0" y="-125.5" />
+      <point x="929.0" y="370.0" />
+      <point x="565.7802083333333" y="370.0" />
+      <point x="49.375" y="170.0" />
+    </edge>
+    <edge source="site.Student" target="site.Group">
+      <point x="-102.33333333333326" y="-60.0" />
+      <point x="221.07187499999998" y="1138.0" />
+      <point x="225.91666666666663" y="1138.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+    <edge source="site.Runner" target="site.Courses">
+      <point x="38.0" y="-26.0" />
+      <point x="432.66666666666663" y="1623.0" />
+      <point x="1014.0114583333334" y="1623.0" />
+      <point x="1014.0114583333334" y="671.0" />
+      <point x="1034.75" y="671.0" />
+      <point x="105.75" y="125.5" />
+    </edge>
+    <edge source="site.Runner" target="site.Student">
+      <point x="-19.0" y="-26.0" />
+      <point x="375.66666666666663" y="1613.0" />
+      <point x="236.65520833333323" y="1613.0" />
+      <point x="236.65520833333323" y="1417.0" />
+      <point x="246.65520833333323" y="1417.0" />
+      <point x="-76.75" y="60.0" />
+    </edge>
+    <edge source="site.Poster" target="site.Course">
+      <point x="76.5" y="-115.0" />
+      <point x="1412.7802083333333" y="360.0" />
+      <point x="664.5302083333333" y="360.0" />
+      <point x="148.125" y="170.0" />
+    </edge>
+    <edge source="site.Runner" target="site.Poster">
+      <point x="76.0" y="-26.0" />
+      <point x="470.66666666666663" y="1643.0" />
+      <point x="1430.0114583333334" y="1643.0" />
+      <point x="1430.0114583333334" y="1138.0" />
+      <point x="1412.7802083333333" y="1138.0" />
+      <point x="76.5" y="115.0" />
+    </edge>
+    <edge source="site.Runner" target="site.Posters">
+      <point x="57.0" y="-26.0" />
+      <point x="451.66666666666663" y="1633.0" />
+      <point x="1222.0114583333334" y="1633.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="site.Teacher" target="site.Groups">
+      <point x="-108.0" y="-71.0" />
+      <point x="528.25" y="661.0" />
+      <point x="326.6666666666667" y="661.0" />
+      <point x="111.66666666666669" y="81.5" />
+    </edge>
+    <edge source="site.Group" target="site.Student">
+      <point x="82.0" y="82.0" />
+      <point x="307.91666666666663" y="1138.0" />
+      <point x="323.40520833333323" y="1138.0" />
+      <point x="0.0" y="-60.0" />
+    </edge>
+    <edge source="site.Group" target="site.Teacher">
+      <point x="82.0" y="-82.0" />
+      <point x="307.91666666666663" y="858.0" />
+      <point x="528.25" y="858.0" />
+      <point x="-108.0" y="71.0" />
+    </edge>
+    <edge source="site.Group" target="site.Course">
+      <point x="-82.0" y="-82.0" />
+      <point x="143.91666666666663" y="858.0" />
+      <point x="37.0" y="858.0" />
+      <point x="37.0" y="370.0" />
+      <point x="467.03020833333335" y="370.0" />
+      <point x="-49.375" y="170.0" />
+    </edge>
+    <edge source="site.Teacher" target="site.Courses">
+      <point x="108.0" y="-71.0" />
+      <point x="744.25" y="671.0" />
+      <point x="823.25" y="671.0" />
+      <point x="-105.75" y="125.5" />
+    </edge>
+    <edge source="site.Posters" target="site.Poster">
+      <point x="0.0" y="-114.5" />
+      <point x="1222.0114583333334" y="1138.0" />
+      <point x="1259.7802083333333" y="1138.0" />
+      <point x="-76.5" y="115.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5210374639769453" x="678.6412324637356" y="524.5105088495574" />
+  <SelectedNodes>
+    <node>site.Runner</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

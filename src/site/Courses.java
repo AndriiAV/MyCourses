@@ -1,9 +1,12 @@
 package site;
 
+import site.filter.Predicate;
+
+import java.io.Serializable;
 import java.util.*;
 
-public class Courses {
-    private final ArrayList<Course> listOfCourses = new ArrayList<>();
+public class Courses implements Iterable<Course>, Serializable {
+    private final List<Course> listOfCourses = new ArrayList<>();
 
     public void sortingByName (){
         Collections.sort(listOfCourses, new Comparator<Course>() {
@@ -51,9 +54,6 @@ public class Courses {
         );
     }
 
-    public void filtering (){
-    }
-
     public void add(Course course) {
         listOfCourses.add(course);
     }
@@ -61,10 +61,21 @@ public class Courses {
         listOfCourses.remove(course);
     }
 
-    public ArrayList<Course> getListOfCourses() {
+    public List<Course> getListOfCourses() {
         return listOfCourses;
     }
 
+    public Courses filter(Predicate<Course> predicate) {
+        Courses res = new Courses();
+
+        for (Course course : listOfCourses) {
+            if (predicate.apply(course)) {
+                res.add(course);
+            }
+        }
+
+        return res;
+    }
 
     @Override
     public String toString() {
@@ -73,5 +84,15 @@ public class Courses {
             joiner.add(course.toString());
         }
         return "Courses:\n" + joiner.toString();
+    }
+
+
+    public void sort(Comparator<Course> comparator) {
+        Collections.sort(listOfCourses, comparator);
+    }
+
+    @Override
+    public Iterator<Course> iterator() {
+        return listOfCourses.iterator();
     }
 }
