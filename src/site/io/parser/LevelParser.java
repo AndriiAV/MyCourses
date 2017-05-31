@@ -7,13 +7,13 @@ public class LevelParser implements Parser<Integer> {
     @Override
     public Integer parse(String s) throws IllegalFormatException {
         int n = new IntParser().parse(s);
-        if (!isReleaseYear(n)) {
+        if (!isLevel(n)) {
             throw new IllegalFormatException("illegal level: " + s);
         }
         return n;
     }
 
-    private boolean isReleaseYear(int n) {
-        return n >= 0 && n <= 10;
+    private boolean isLevel(int n) {
+        return n >= 1 && n <= 3;
     }
 }

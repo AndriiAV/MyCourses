@@ -8,17 +8,17 @@ import java.io.*;
 public class BasicCoursesIO {
     private BasicCoursesIO() {}
 
-/*    public static Courses readFromTextFile(String fileName) throws IOException, IllegalFormatException {
-        CourseParser filmParser = new CourseParser(";", ",");
-        try (ObjectReader<Courses> filmsReader = new CourseTextReader(new FileReader(fileName), filmParser)) {
+    public static Courses readFromTextFile(String fileName) throws IOException, IllegalFormatException {
+        CourseParser courseParser = new CourseParser(";");
+        try (ObjectReader<Courses> filmsReader = new CoursesTextReader(new FileReader(fileName), courseParser)) {
             return filmsReader.read();
         }
     }
 
     public static void writeIntoTextFile(String fileName, Courses courses) throws IOException {
-        CourseStringConverter filmConverter = new CourseStringConverter(";", ",");
-        try (ObjectWriter<Courses> filmsWriter = new CoursesTextWriter(new FileWriter(fileName), filmConverter)) {
-            filmsWriter.write(courses);
+        CourseStringConverter courseConverter = new CourseStringConverter(";");
+        try (ObjectWriter<Courses> coursesWriter = new CoursesTextWriter(new FileWriter(fileName), courseConverter)) {
+            coursesWriter.write(courses);
         }
     }
 
@@ -32,5 +32,5 @@ public class BasicCoursesIO {
         try (ObjectReader<Courses> filmsReader = new CoursesBinReader(new FileInputStream(fileName))) {
             return filmsReader.read();
         }
-    }*/
+    }
 }

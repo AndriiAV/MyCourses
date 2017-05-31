@@ -31,5 +31,14 @@ public class CoursePredicates {
             }
         };
     }
+
+    public static Predicate<Course> withPrice(final int minPrice, final int maxPrice) {
+        return new Predicate<Course>() {
+            @Override
+            public boolean apply(Course elem) {
+                return elem.getPrice() >= minPrice && elem.getPrice() <= maxPrice;
+            }
+        };
+    }
 }
 

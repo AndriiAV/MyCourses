@@ -2,6 +2,10 @@ package site;
 
 import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Collections;
@@ -20,6 +24,26 @@ public class Runner {
         courses1.add(course2);
         courses1.add(course3);
         courses1.add(course4);
+
+        String INPUT_TEXT_FILE = "C:\\Users\\Андрей\\IdeaProjects\\MyCourses\\files\\courses.txt";
+        System.out.println(course1.toString());
+
+        try {
+            FileReader fileReader = new FileReader(INPUT_TEXT_FILE);
+            FileWriter fileWriter = new FileWriter(INPUT_TEXT_FILE);
+
+            fileWriter.write(course2.toString());
+            fileWriter.write(course3.toString());
+            fileWriter.write(course4.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+
+
+
 
 /*        System.out.println("Normal");
         System.out.println(courses1);
